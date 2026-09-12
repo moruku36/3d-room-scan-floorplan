@@ -1,25 +1,31 @@
-# Original room scan reference
+# 3Dスキャン元データについて
 
-## Source
+このフォルダには、現在の部屋をPolycamで3Dスキャンした元データを保存しています。
 
-- Polycam capture: https://poly.cam/capture/A563F82A-8B22-46D5-BE74-9D4EBC7DAFCD
-- Export format used in the validation: GLB / glTF binary
-- Local source filename used during analysis: `9_13_2026.glb`
-- SHA-256: `473ebd78292f663b52a22840708e8d0a83a4828a33e64e65a40d042fd391841a`
-- Size: approximately 136 KiB
+## 元データ
 
-## Privacy
+- Polycamの公開ページ: https://poly.cam/capture/A563F82A-8B22-46D5-BE74-9D4EBC7DAFCD
+- GitHubに保存した3Dデータ: [`room-scan.glb`](room-scan.glb)
+- 形式: GLB
 
-The scan represents a real private room and can reveal room geometry and furniture placement. This repository is public, so treat any future raw scan upload as public data.
+GLBは、部屋の形や家具の位置などを1つの3Dファイルとして保存できる形式です。今回の間取り図や寸法の確認では、このデータをもとに解析しています。
 
-## Binary asset note
+## このデータから読み取ったもの
 
-The ChatGPT GitHub connector used for this session can create/update repository text content, branches, commits and Git objects, but the available write interface does not accept a local binary file reference directly. For that reason, the raw GLB bytes are not embedded in this commit; the public Polycam capture above is retained as the source reference and the GLB-derived structured measurements are committed in `analysis/measurements.yaml`.
+主に次の情報を確認しました。
 
-When adding the raw binary manually, use:
+- 部屋の形
+- 床と天井の位置
+- 窓やドアの位置
+- ベッド、机、本棚、電子ピアノなどの位置
+- 部屋や家具のおおよその大きさ
 
-```text
-data/room-scan.glb
-```
+読み取った主な寸法は [`../analysis/measurements.yaml`](../analysis/measurements.yaml) にまとめています。
 
-and verify the SHA-256 above after upload.
+## 注意点
+
+3Dスキャンから得られる寸法は、実測値と完全に同じではありません。
+
+家具の購入、搬入可否の最終確認、カーテンや収納家具の注文など、数cmの差が重要になる場面では、必ずメジャーやレーザー距離計で測った値を優先します。
+
+また、この3Dデータには実際の室内形状や家具配置が含まれています。このリポジトリは公開されているため、データも公開情報として扱います。
