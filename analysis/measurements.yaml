@@ -1,0 +1,46 @@
+scan:
+  source: Polycam GLB
+  captured_file: data/room-scan.glb
+  note: >-
+    Values are derived from GLB world coordinates and object bounding boxes.
+    They are approximate and must not be treated as construction-grade measurements.
+
+room:
+  main_width_m: 3.62
+  main_depth_m: 2.71
+  alcove_width_m: 2.00
+  alcove_depth_m: 0.84
+  max_depth_m: 3.55
+  scanned_floor_area_m2: 11.50
+  floor_to_ceiling_m: 2.42
+
+openings:
+  entrance_door_width_m: 0.77
+  secondary_door_or_opening_width_m: 0.68
+  alcove_window_width_m: 1.59
+  right_window_width_m: 1.80
+
+furniture:
+  bed:
+    width_m: 1.08
+    length_m: 2.18
+  pc_desk_occupied_bbox:
+    width_m: 1.53
+    depth_m: 1.05
+  office_chair_bbox:
+    width_m: 0.62
+    depth_m: 0.77
+  sub_desk:
+    width_m: 0.77
+    depth_m: 0.72
+  digital_piano:
+    depth_m: 0.53
+    width_m: 1.40
+  bookshelf:
+    depth_m: 0.34
+    width_m: 0.97
+
+recommended_validation:
+  - Re-measure critical clearances with a tape measure or laser distance meter.
+  - Verify door clear width and turning radius before moving large furniture.
+  - Verify curtain, appliance, and furniture dimensions before purchase.
