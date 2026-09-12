@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="980" viewBox="0 0 1200 980">
+  <style>
+    text{font-family:'Noto Sans JP','Yu Gothic',sans-serif;fill:#111827}.title{font-size:36px;font-weight:700}.label{font-size:21px;font-weight:700}.small{font-size:17px}.dim{font-size:18px}.wall{stroke:#333;stroke-width:10;fill:none}.item{stroke:#333;stroke-width:3}.window{stroke:#63aede;stroke-width:10}.door{stroke:#c78b5a;stroke-width:8}.dimline{stroke:#111;stroke-width:2;marker-start:url(#arr);marker-end:url(#arr)}
+  </style>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8 0 L0 4 L8 8" fill="none" stroke="#111" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1200" height="980" fill="#fff"/>
+  <text x="600" y="55" text-anchor="middle" class="title">Polycam GLB座標ベース・寸法付き間取り図</text>
+  <text x="600" y="88" text-anchor="middle" class="small">スキャン床面積 約11.50 m² ｜ 床面〜天井 約2.42 m</text>
+
+  <!-- scaled room: 3.62 m main width, 2.71 m main depth, 2.00 x 0.84 m alcove -->
+  <!-- scale ≈ 210 px/m -->
+  <path class="wall" d="M210 255 L445 255 L445 78 L865 78 L865 255 L970 255 L970 824 L210 824 Z"/>
+  <line class="window" x1="496" y1="78" x2="830" y2="78"/>
+  <line class="window" x1="970" y1="430" x2="970" y2="807"/>
+
+  <!-- furniture from GLB bboxes -->
+  <rect class="item" x="533" y="89" width="322" height="220" fill="#6d7680"/>
+  <text x="694" y="188" text-anchor="middle" class="label" fill="#fff">PCデスク</text>
+  <text x="694" y="215" text-anchor="middle" class="small" fill="#fff">1.53 × 1.05 m</text>
+
+  <rect class="item" x="629" y="204" width="131" height="162" fill="#34383d"/>
+  <text x="694" y="278" text-anchor="middle" class="label" fill="#fff">チェア</text>
+  <text x="694" y="305" text-anchor="middle" class="small" fill="#fff">0.62 × 0.77 m</text>
+
+  <rect class="item" x="861" y="266" width="162" height="152" fill="#747b82"/>
+  <text x="942" y="332" text-anchor="middle" class="label" fill="#fff">サブデスク</text>
+  <text x="942" y="359" text-anchor="middle" class="small" fill="#fff">0.77 × 0.72 m</text>
+
+  <rect class="item" x="220" y="287" width="111" height="294" fill="#87624e"/>
+  <text x="276" y="418" text-anchor="middle" class="label" fill="#fff">電子ピアノ</text>
+  <text x="276" y="445" text-anchor="middle" class="small" fill="#fff">0.53 × 1.40 m</text>
+
+  <rect class="item" x="220" y="596" width="71" height="204" fill="#7c5a43"/>
+  <text x="255" y="690" text-anchor="middle" class="label" fill="#fff">本棚</text>
+  <text x="255" y="717" text-anchor="middle" class="small" fill="#fff">0.34 × 0.97 m</text>
+
+  <rect class="item" x="502" y="582" width="458" height="227" fill="#abcbea"/>
+  <text x="731" y="682" text-anchor="middle" class="label">ベッド</text>
+  <text x="731" y="709" text-anchor="middle" class="small">2.18 × 1.08 m</text>
+
+  <!-- entrance door -->
+  <line class="door" x1="314" y1="824" x2="476" y2="824"/>
+  <path d="M314 824 L314 662 M314 662 A162 162 0 0 1 476 824" fill="none" stroke="#8b5e3c" stroke-width="3"/>
+
+  <!-- dimensions -->
+  <line class="dimline" x1="210" y1="885" x2="970" y2="885"/>
+  <text x="590" y="915" text-anchor="middle" class="dim">主室 幅 3.62 m</text>
+
+  <line class="dimline" x1="1050" y1="255" x2="1050" y2="824"/>
+  <text x="1084" y="540" text-anchor="middle" class="dim" transform="rotate(90 1084 540)">主室 奥行 2.71 m</text>
+
+  <line class="dimline" x1="445" y1="132" x2="865" y2="132"/>
+  <text x="655" y="122" text-anchor="middle" class="dim">出窓部 幅 2.00 m</text>
+
+  <line class="dimline" x1="400" y1="78" x2="400" y2="255"/>
+  <text x="372" y="167" text-anchor="middle" class="dim" transform="rotate(-90 372 167)">出窓部 奥行 0.84 m</text>
+
+  <line class="dimline" x1="130" y1="78" x2="130" y2="824"/>
+  <text x="98" y="451" text-anchor="middle" class="dim" transform="rotate(-90 98 451)">最大奥行 3.55 m</text>
+
+  <text x="663" y="63" text-anchor="middle" class="small">窓 1.59 m</text>
+  <text x="1007" y="617" text-anchor="middle" class="small" transform="rotate(90 1007 617)">窓 1.80 m</text>
+  <text x="394" y="856" text-anchor="middle" class="small">入口ドア 0.77 m</text>
+
+  <text x="600" y="956" text-anchor="middle" class="small">寸法はGLB内の座標・物体バウンディングボックスから算出。実測ではないため数cm程度以上の誤差を見込む。</text>
+</svg>
