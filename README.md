@@ -1,10 +1,16 @@
 # 3Dスキャンで部屋を記録し、間取り図にする検証
 
+スマートフォンで部屋を3Dスキャンし、そのデータと写真をAIで整理して、**部屋の形・家具の配置・おおよその寸法を分かりやすく残せるか**を試した記録です。
+
+### 3Dスキャンした部屋
+
 ![3D room scan preview](assets/room-scan-preview.jpg)
 
-スマートフォンで部屋を3Dスキャンし、そのデータをAIで読み取って、**部屋の大きさ・家具の位置・窓やドアの寸法を整理できるか**を試した記録です。
+### AIで見やすく整理した現在の部屋
 
-将来の引っ越しや新居探しで、
+![現在の部屋の概略間取り図](outputs/current-room-overview.png)
+
+実際の部屋を3Dで記録しておくことで、将来の引っ越しや新居探しのときに、
 
 - 今ある家具を新居に置けるか
 - ベッドや机をどこに配置するか
@@ -20,10 +26,6 @@
 3. **ChatGPTで3Dデータを解析**
 4. **現在の家具配置が分かる間取り図を作成**
 5. **部屋や家具のおおよその寸法を入れた間取り図を作成**
-
-### 現在の部屋を見やすくした間取り図
-
-![現在の部屋の概略間取り図](outputs/current-room-overview.png)
 
 ### 3Dデータから作成した寸法付き間取り図
 
@@ -67,7 +69,7 @@
 |---|---|
 | `assets/room-scan-preview.jpg` | 3Dスキャンした部屋のプレビュー画像 |
 | `data/room-scan.glb` | Polycamから書き出した部屋の3Dデータ本体 |
-| `outputs/current-room-overview.png` | 現在の家具配置が分かる間取り図 |
+| `outputs/current-room-overview.png` | 現在の家具配置が分かるカラーの間取り図 |
 | `outputs/dimensioned-floorplan.png` | 部屋や家具の寸法を入れた間取り図 |
 | `outputs/dimensioned-floorplan.pdf` | 寸法付き間取り図のPDF版 |
 | `analysis/measurements.yaml` | 3Dデータから読み取った寸法を一覧化したデータ |
