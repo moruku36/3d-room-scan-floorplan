@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <style>
+    text{font-family:'Noto Sans JP','Yu Gothic',sans-serif;fill:#1f2937}.title{font-size:38px;font-weight:700}.label{font-size:23px;font-weight:700}.small{font-size:18px}.wall{stroke:#34383d;stroke-width:18;fill:none;stroke-linejoin:miter}.item{stroke:#333;stroke-width:3}.window{stroke:#71b7df;stroke-width:12}.door{stroke:#9a653f;stroke-width:8}
+  </style>
+  <rect width="1200" height="900" fill="#fff"/>
+  <text x="600" y="58" text-anchor="middle" class="title">現在の部屋の概略間取り図</text>
+  <text x="1140" y="88" text-anchor="end" class="small">※写真・3Dスキャンから推定した概略図</text>
+
+  <!-- room outline with workstation alcove -->
+  <path class="wall" d="M145 150 L430 150 L430 115 L800 115 L800 150 L1050 150 L1050 760 L145 760 Z"/>
+  <line class="window" x1="475" y1="115" x2="755" y2="115"/>
+  <line class="window" x1="1050" y1="265" x2="1050" y2="520"/>
+
+  <!-- entrance door -->
+  <line class="door" x1="330" y1="760" x2="470" y2="760"/>
+  <path d="M330 760 L330 620 M330 620 A140 140 0 0 1 470 760" fill="none" stroke="#9a653f" stroke-width="3"/>
+
+  <!-- PC desk -->
+  <rect class="item" x="425" y="175" width="350" height="150" rx="6" fill="#4e5965"/>
+  <rect class="item" x="485" y="190" width="220" height="42" fill="#8db1d9"/>
+  <rect class="item" x="445" y="200" width="65" height="50" transform="rotate(-12 477 225)" fill="#8db1d9"/>
+  <rect class="item" x="680" y="200" width="65" height="50" transform="rotate(12 712 225)" fill="#8db1d9"/>
+  <text x="600" y="290" text-anchor="middle" class="label" fill="#fff">PCデスク</text>
+
+  <!-- chair -->
+  <rect class="item" x="525" y="330" width="145" height="145" rx="35" fill="#30343a"/>
+  <text x="598" y="410" text-anchor="middle" class="label" fill="#fff">チェア</text>
+
+  <!-- sub desk -->
+  <rect class="item" x="790" y="230" width="160" height="145" fill="#606972"/>
+  <text x="870" y="312" text-anchor="middle" class="label" fill="#fff">サブデスク</text>
+
+  <!-- clothes rack -->
+  <rect class="item" x="955" y="205" width="60" height="230" fill="#d9d2c3"/>
+  <line x1="975" y1="220" x2="975" y2="415" stroke="#777" stroke-width="5"/>
+  <line x1="990" y1="220" x2="990" y2="415" stroke="#777" stroke-width="5"/>
+  <text x="985" y="460" text-anchor="middle" class="small">ハンガーラック</text>
+
+  <!-- bed -->
+  <rect class="item" x="600" y="510" width="390" height="220" rx="12" fill="#a8cbea"/>
+  <rect x="865" y="510" width="125" height="220" fill="#e9d28f" opacity=".95"/>
+  <text x="790" y="630" text-anchor="middle" class="label">ベッド（シングル）</text>
+
+  <!-- piano -->
+  <rect class="item" x="180" y="290" width="145" height="275" fill="#704b38"/>
+  <text x="252" y="435" text-anchor="middle" class="label" fill="#fff">電子ピアノ</text>
+
+  <!-- fan -->
+  <circle class="item" cx="385" cy="420" r="48" fill="#f1f0e8"/>
+  <line x1="385" y1="468" x2="385" y2="535" stroke="#888" stroke-width="8"/>
+  <ellipse cx="385" cy="550" rx="42" ry="13" fill="#ddd" stroke="#888" stroke-width="3"/>
+  <text x="385" y="590" text-anchor="middle" class="small">扇風機</text>
+
+  <!-- bookshelf -->
+  <rect class="item" x="165" y="585" width="125" height="145" fill="#765640"/>
+  <text x="228" y="665" text-anchor="middle" class="label" fill="#fff">本棚</text>
+
+  <!-- whiteboard / AC -->
+  <rect x="175" y="185" width="135" height="70" fill="#f8fafc" stroke="#aaa" stroke-width="3"/>
+  <text x="242" y="228" text-anchor="middle" class="small">ホワイトボード</text>
+  <rect x="175" y="130" width="125" height="38" fill="#e8dfbe" stroke="#aaa" stroke-width="2"/>
+  <text x="238" y="122" text-anchor="middle" class="small">エアコン</text>
+
+  <text x="610" y="145" text-anchor="middle" class="small">出窓・作業スペース</text>
+  <text x="1100" y="395" transform="rotate(90 1100 395)" text-anchor="middle" class="small">窓（カーテン）</text>
+  <text x="390" y="820" text-anchor="middle" class="small">入口ドア</text>
+</svg>
