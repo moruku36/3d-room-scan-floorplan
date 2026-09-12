@@ -1,5 +1,7 @@
 # Room Digital Twin / Moving Data Validation
 
+![3D room scan preview](assets/room-scan-preview.jpg)
+
 2026-09-13 に実施した、**Polycam の3Dスキャン + ChatGPT による部屋解析**の検証結果をまとめたリポジトリです。
 
 目的は、現在の部屋をデジタル化し、将来の引っ越し・新居内見・家具配置・搬入可否・ネットワーク/設備設計などに再利用できるかを確認することです。
@@ -10,6 +12,7 @@
 
 | Path | 内容 |
 |---|---|
+| `assets/room-scan-preview.jpg` | 3D室内スキャンのプレビュー画像 |
 | `data/room-scan-reference.md` | 元のPolycamキャプチャURL、GLBファイル情報、SHA-256 |
 | `outputs/current-room-overview.svg` | 現在の部屋の概略間取り図（GitHubで表示可能なベクター版） |
 | `outputs/dimensioned-floorplan.svg` | GLB座標・寸法を基にした寸法付き間取り図（ベクター版） |
