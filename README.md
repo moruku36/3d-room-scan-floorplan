@@ -4,18 +4,27 @@
 
 目的は、現在の部屋をデジタル化し、将来の引っ越し・新居内見・家具配置・搬入可否・ネットワーク/設備設計などに再利用できるかを確認することです。
 
-> **Privacy note:** このリポジトリは public です。`data/room-scan.glb` には実在する室内の3D形状が含まれます。
+> **Privacy note:** このリポジトリは public です。実在する室内の形状・家具配置に関する情報を含みます。
 
 ## Artifacts
 
 | Path | 内容 |
 |---|---|
-| `data/room-scan.glb` | Polycam からエクスポートした元の3D室内スキャン |
-| `outputs/current-room-overview.png` | 写真から作成した現在の部屋の概略間取り図 |
-| `outputs/dimensioned-floorplan.png` | GLB座標・寸法を基に作成した寸法付き間取り図 |
-| `outputs/dimensioned-floorplan.pdf` | 寸法付き間取り図のPDF版 |
+| `data/room-scan-reference.md` | 元のPolycamキャプチャURL、GLBファイル情報、SHA-256 |
+| `outputs/current-room-overview.svg` | 現在の部屋の概略間取り図（GitHubで表示可能なベクター版） |
+| `outputs/dimensioned-floorplan.svg` | GLB座標・寸法を基にした寸法付き間取り図（ベクター版） |
 | `analysis/measurements.yaml` | GLBから読み取った主要寸法の構造化データ |
 | `docs/future-use-cases.md` | 引っ越し・新居検討で今後できること |
+
+## Original 3D scan
+
+元の3Dスキャンは Polycam の公開キャプチャから取得した GLB です。
+
+- Polycam: https://poly.cam/capture/A563F82A-8B22-46D5-BE74-9D4EBC7DAFCD
+- ローカル解析時ファイル名: `9_13_2026.glb`
+- SHA-256: `473ebd78292f663b52a22840708e8d0a83a4828a33e64e65a40d042fd391841a`
+
+このセッションで利用できたGitHubコネクタは、ローカルバイナリファイルをそのまま添付する書き込みインターフェースを持たないため、GLB本体はコミットせず、公開Polycamリンク・チェックサム・GLB由来の構造化データを保存しています。詳細は [`data/room-scan-reference.md`](data/room-scan-reference.md) を参照してください。
 
 ## GLBから読み取った主な寸法
 
