@@ -1,0 +1,38 @@
+updated: 2026-09-14
+status: planning
+source_notes:
+  - type: in_store_visit
+    store: Nitori
+    date: 2026-09-13
+  - type: chatgpt_shared_note
+    url: https://chatgpt.com/s/t_6aa7493dbf48819199b80fa044c1782a
+
+candidates:
+  - id: sofa-dl01-bk
+    category: sofa
+    name: "2人掛けソファ 本革(一部合成皮革)タイプ (DL01 BK)"
+    brand: Nitori
+    color: black
+    status: candidate
+    product_url: https://www.nitori-net.jp/ec/product/2110300032385
+    checks:
+      - living_room_fit
+      - tv_distance
+      - robot_vacuum_clearance
+      - delivery_route_clearance
+      - circulation_space
+
+  - id: dining-table-om004-120-ww-wh
+    category: dining_table
+    name: "ダイニングテーブル (OM004 120 WW/WH)"
+    brand: Nitori
+    nominal_width_cm: 120
+    color: WW/WH
+    status: candidate
+    product_url: https://www.nitori-net.jp/ec/product/2110100020544
+    checks:
+      - chair_pullout_clearance
+      - circulation_space
+      - sofa_coexistence
+      - serving_and_cleaning
+      - guest_use
