@@ -49,3 +49,17 @@ candidates:
       - sofa_coexistence
       - serving_and_cleaning
       - guest_use
+
+  - id: nitori-2110100030550
+    category: unknown
+    name: "ニトリ 商品コード 2110100030550"
+    brand: Nitori
+    product_code: "2110100030550"
+    status: candidate
+    product_url: https://www.nitori-net.jp/ec/product/2110100030550/
+    details_pending: true
+    checks:
+      - product_details
+      - room_fit
+      - circulation_space
+      - delivery_route_clearance
