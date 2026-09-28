@@ -1,0 +1,35 @@
+# 内見で測る値（単位: m）。家1の analysis/measurements.yaml と比較できるキー名にしています。
+measured_on: null
+method: ""   # tape / laser / polycam
+rooms:
+  living:   {width_m: null, depth_m: null, ceiling_m: null}
+  bedroom:  {width_m: null, depth_m: null, ceiling_m: null}
+  work_room: {width_m: null, depth_m: null, ceiling_m: null}
+openings:
+  entrance_door_width_m: null
+  room_door_width_m: null
+  windows:
+    - {room: "", width_m: null, height_m: null, sill_height_m: null, curtain_rail: ""}
+storage:
+  closets:
+    - {room: "", width_m: null, depth_m: null, height_m: null, has_shelf_pole: null}
+appliance_spots:
+  fridge:   {width_m: null, depth_m: null, height_m: null, outlet: ""}
+  washer:   {width_m: null, depth_m: null, height_m: null, faucet_height_m: null, drain_position: ""}
+  kitchen:  {counter_height_m: null, hood_clearance_m: null}
+utilities:            # 位置は壁・床からの距離も分かるように写真で残す
+  outlets:   []       # {room, wall, height_m, count, grounded}
+  lan:       []
+  tv:        []
+  switches:  []
+  aircon:    []       # {room, exists, outlet_200v, capacity}
+  intercom:  ""
+  internet_terminal: ""
+quality_checks:
+  water_pressure: ""
+  hot_water_wait: ""
+  mobile_signal: {carrier_1: "", carrier_2: ""}
+  wifi_router_spot: ""
+  noise: {road: "", neighbors: "", train: ""}
+  smell_mold_leak: ""
+  sunlight: {morning: "", afternoon: ""}

@@ -1,6 +1,6 @@
 scan:
   source: Polycam GLB
-  captured_file: data/room-scan.glb
+  captured_file: homes/home1/data/room-scan.glb
   note: >-
     Values are derived from GLB world coordinates and object bounding boxes.
     They are approximate and must not be treated as construction-grade measurements.

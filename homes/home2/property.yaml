@@ -1,0 +1,27 @@
+name: ""            # 物件名
+address: ""
+viewing_date: 2026-10-03   # 要確認
+type: rent          # rent / buy
+layout: ""          # 例: 2LDK
+official_floor_area_m2: null
+built_year: null
+floor: null
+total_floors: null
+orientation: ""     # 主採光面の方角
+cost:
+  rent_or_price: null
+  management_fee: null
+  deposit: null
+  key_money: null
+  other_initial_costs: null
+conditions:
+  pets: null
+  musical_instrument: null   # 電子ピアノ持込の可否
+  internet: ""               # 光回線の有無・引込方式
+  parking_bicycle: ""
+neighborhood:
+  station_walk_min: null
+  supermarket: ""
+  noise_notes: ""
+  garbage_rules: ""
+notes: []

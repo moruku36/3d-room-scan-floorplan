@@ -1,0 +1,10 @@
+# 搬入経路（単位: m）。家具の梱包サイズ・重量と突き合わせる。
+entrance: {door_clear_width_m: null, step_m: null}
+corridor: {min_width_m: null, corners: []}   # corners: {location, clear_width_m}
+elevator: {door_width_m: null, cabin_width_m: null, cabin_depth_m: null, cabin_height_m: null, capacity_kg: null}
+stairs: {exists: null, width_m: null, landing_m: null}
+room_doors: []                                # {room, clear_width_m, height_m}
+building_rules:
+  move_in_hours: ""
+  elevator_reservation: ""
+  loading_zone: ""

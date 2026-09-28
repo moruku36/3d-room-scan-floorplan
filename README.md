@@ -4,11 +4,11 @@
 
 ### 3Dスキャンした部屋
 
-![3D room scan preview](assets/room-scan-preview.jpg)
+![3D room scan preview](homes/home1/assets/room-scan-preview.jpg)
 
 ### AIで見やすく整理した現在の部屋
 
-![現在の部屋の概略間取り図](outputs/current-room-overview.png)
+![現在の部屋の概略間取り図](homes/home1/outputs/current-room-overview.png)
 
 実際の部屋を3Dで記録しておくことで、将来の引っ越しや新居探しのときに、
 
@@ -29,9 +29,9 @@
 
 ### 3Dデータから作成した寸法付き間取り図
 
-![寸法付き間取り図](outputs/dimensioned-floorplan.png)
+![寸法付き間取り図](homes/home1/outputs/dimensioned-floorplan.png)
 
-## 3Dスキャンから分かった主なサイズ
+## 家1：3Dスキャンから分かった主なサイズ
 
 | 場所・家具 | おおよそのサイズ |
 |---|---:|
@@ -49,7 +49,7 @@
 | 出窓側の窓 | 約 1.59 m |
 | 右側の窓 | 約 1.80 m |
 
-## 新居用に検討している家具
+## 家2（新居）用に検討している家具
 
 2026-09-13 にニトリで実物を見て、現時点では以下を候補にしています。まだ購入確定ではなく、新居の間取りや搬入経路と合わせて最終判断する予定です。
 
@@ -80,7 +80,7 @@
 - 新居用の追加候補として記録
 - 商品名・寸法などの詳細は、確認でき次第追記予定
 
-家具候補の詳細と確認ポイントは [`docs/furniture-candidates.md`](docs/furniture-candidates.md) にまとめています。
+家具候補の詳細と確認ポイントは [`homes/home2/furniture-candidates.md`](homes/home2/furniture-candidates.md) にまとめています。
 
 ## この方法で今後できそうなこと
 
@@ -97,26 +97,23 @@
 
 より詳しいアイデアは [`docs/future-use-cases.md`](docs/future-use-cases.md) にまとめています。
 
-## このリポジトリに入っているもの
+## このリポジトリの構成
 
-| ファイル | 内容 |
+複数の住まいを同じ形式で管理します。
+
+| 場所 | 内容 |
 |---|---|
-| `assets/room-scan-preview.jpg` | 3Dスキャンした部屋のプレビュー画像 |
-| `data/room-scan.glb` | Polycamから書き出した部屋の3Dデータ本体 |
-| `outputs/current-room-overview.png` | 現在の家具配置が分かるカラーの間取り図 |
-| `outputs/dimensioned-floorplan.png` | 部屋や家具の寸法を入れた間取り図 |
-| `outputs/dimensioned-floorplan.pdf` | 寸法付き間取り図のPDF版 |
-| `analysis/measurements.yaml` | 3Dデータから読み取った寸法を一覧化したデータ |
-| `docs/future-use-cases.md` | 引っ越し・新居探しでの活用アイデア |
-| `docs/furniture-candidates.md` | 新居用に検討している家具と確認ポイント |
-| `data/furniture-candidates.yaml` | 家具候補を後で比較しやすい形にしたデータ |
+| [`homes/home1/`](homes/home1/README.md) | **家1**（現在の住まい）：3Dスキャン、間取り図、寸法データ |
+| [`homes/home2/`](homes/home2/README.md) | **家2**（新居マンション）：内見データ、搬入経路、家具候補 |
+| [`docs/future-use-cases.md`](docs/future-use-cases.md) | 引っ越し・新居探しでの活用アイデア |
+| [`docs/viewing-checklist.md`](docs/viewing-checklist.md) | 内見で撮る・測るもののチェックリスト |
 
 ## 元の3Dスキャン
 
 Polycamで取得したデータです。
 
 - [Polycamで3Dスキャンを見る](https://poly.cam/capture/A563F82A-8B22-46D5-BE74-9D4EBC7DAFCD)
-- GitHub内の3Dデータ：[`data/room-scan.glb`](data/room-scan.glb)
+- GitHub内の3Dデータ：[`homes/home1/data/room-scan.glb`](homes/home1/data/room-scan.glb)
 
 ## 注意点
 
