@@ -2,6 +2,13 @@
 
 [English](README.md) | [日本語](README.ja.md)
 
+## 2026-10-04（日）の内見準備
+
+[日本語チェックリスト](docs/viewing-checklist.ja.md) / [English checklist](docs/viewing-checklist.md)
+に事前準備・実測・撮影・LiDAR有無別の手順・帰宅前検証をまとめています。
+公開repoには空欄テンプレートだけを置き、実際の寸法・写真・3D・間取りはcheckout外のprivate保存先で管理します。
+端末とexport権限は事前テストで確認し、不明/非対応なら写真＋手測りで進めます。新規有料契約は不要です。
+
 スマートフォンの3Dスキャン、部屋の写真、AI分析を使って、部屋の形、家具配置、おおよその寸法を記録し、引っ越しや配置検討に使う実験です。
 
 ---
@@ -114,7 +121,7 @@
 | [`homes/home1/`](homes/home1/README.md) | **家1**（現在の住まい）：3Dスキャン、間取り図、寸法データ |
 | [`homes/home2/`](homes/home2/README.md) | **家2**（新居マンション）：内見データ、搬入経路、家具候補 |
 | [`docs/future-use-cases.md`](docs/future-use-cases.md) | 引っ越し・新居探しでの活用アイデア |
-| [`docs/viewing-checklist.md`](docs/viewing-checklist.md) | 内見で撮る・測るもののチェックリスト |
+| [`docs/viewing-checklist.ja.md`](docs/viewing-checklist.ja.md) | 内見で撮る・測るもののチェックリスト（[English](docs/viewing-checklist.md)） |
 
 ## 元の3Dスキャン
 
