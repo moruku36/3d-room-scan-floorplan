@@ -1,6 +1,6 @@
-name: ""            # 物件名
-address: ""
-viewing_date: 2026-10-03   # 要確認
+# Public blank template. Fill a copy outside this public checkout in private storage.
+# 公開用の空欄テンプレ。実データはcheckout外のprivateコピーに記入。住所/部屋番号は不要。
+viewing_date: 2026-10-04   # Planned Sunday viewing / 日曜内見予定
 type: rent          # rent / buy
 layout: ""          # 例: 2LDK
 official_floor_area_m2: null

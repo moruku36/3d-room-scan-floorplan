@@ -22,8 +22,18 @@ The goal is to support furniture placement, moving-access checks, and home-offic
 
 ## Contents
 
+- [Viewing capture checklist (English)](docs/viewing-checklist.md) / [内見チェックリスト（日本語）](docs/viewing-checklist.ja.md)
 - [docs/](docs)
 - [homes/](homes)
+
+The planned home2 viewing is Sunday, 2026-10-04. Use the checklist to capture
+manual dimensions, utility positions, delivery clearances, photos and optional
+3D scans. Device/LiDAR and current export entitlement need a pre-visit test;
+photos plus hand measurements are the fallback, without a new paid plan.
+
+This repository is public. Keep home2 templates blank here and save actual
+measurements, scans, photos and floor plans outside this checkout in private
+storage. See the checklist for capture permission, IDs, calibration and backup.
 
 ## Detailed documentation
 

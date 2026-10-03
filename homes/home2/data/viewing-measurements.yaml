@@ -1,4 +1,7 @@
 # 内見で測る値（単位: m）。家1の analysis/measurements.yaml と比較できるキー名にしています。
+# Public BLANK template: fill only a private copy outside this checkout.
+# 公開用空欄。実測値/写真/スキャン/間取りはcheckout外のprivate保存先へ。
+# All distances/coordinates use m; null is unknown, not zero.
 measured_on: null
 method: ""   # tape / laser / polycam
 rooms:
@@ -33,3 +36,53 @@ quality_checks:
   noise: {road: "", neighbors: "", train: ""}
   smell_mold_leak: ""
   sunlight: {morning: "", afternoon: ""}
+
+# Optional detailed records / 詳細記録。Repeat entries in the private copy.
+# Use R01 room, R01-W01 wall, R01-D01 door, R01-N01 window, R01-U01 utility,
+# M001 measurement, P001 photo, S001 scan IDs; map names on a private sketch.
+capture_context:
+  device_model: ""
+  lidar_confirmed: null
+  app_name: ""
+  app_version: ""
+  capture_mode: ""
+  existing_plan: ""
+  offline_test_result: ""
+  export_test_result: ""
+  permission_scope: ""
+  north_source: ""
+room_frames: []
+# {room_id, origin_description, origin_photo_id, x_direction, y_direction,
+#  z_direction: up, sketch_reference, scan_alignment_note}
+wall_segments: []
+# {wall_id, room_id, start_corner, end_corner, length_m, skirting_projection_m,
+#  measurement_ids: [], status, missing_reason}
+feature_records: []
+# {feature_id, room_id, wall_id, kind, offset_from_wall_start_m, height_from_floor_m,
+#  width_m, depth_m, height_m, operation, obstruction_note, measurement_ids: [], photo_ids: []}
+# kind: door/window/curtain_rail/beam/column/step/storage/outlet/lan/tv/aircon/
+#       water_supply/drain/washer_pan/etc. Record clear and outer sizes separately.
+measurement_records: []
+# {measurement_id, feature_id, quantity, value_m, method: tape,
+#  endpoint_a, endpoint_b, repeats_m: [], uncertainty_m, photo_ids: [],
+#  status: done, missing_reason}
+photo_manifest: []
+# {photo_id, original_filename, feature_ids: [], measurement_ids: [],
+#  direction, description, private_relative_path}
+scan_reference_checks: []
+# Per room: two independent horizontal spans + a height + critical clearances.
+# {scan_id, measurement_id, scan_value_m, manual_value_m,
+#  signed_difference_m, relative_difference, action}
+# signed_difference = scan - manual. Preserve originals; record derived transforms.
+derived_scan_transforms: []
+# {scan_id, derived_file, original_file, unit, scale_factor, rotation_note,
+#  translation_note, reason, before_after_check_ids: []}
+file_manifest: []
+# {file_id, private_relative_path, kind, bytes, app_version, capture_mode,
+#  export_format, sidecars: [], reopened, reference_scale_checked, backup_verified}
+coverage_review:
+  rooms_checked: []
+  essential_missing: []
+  local_files_reopened: null
+  second_private_copy_verified: null
+  backup_pending_reason: ""
